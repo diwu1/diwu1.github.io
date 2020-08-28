@@ -15,12 +15,14 @@
     </style>
   </head>
    <body>
-    <div class="container">
-      <div id="embed-1">
-        <iframe name="embed-preview-privateDeploy" frameBorder="none" scrolling="no" width="500" height="800" src="https://web.yammer.com/embed/feed">
-        </iframe>
-      </div>
-    </div>
+      <div id="embed-1"></div>
+    <script type="text/javascript" src="https://s0-azure.assets-yammer.com/assets/platform_embed.js"></script>
+    <script type="text/javascript">
+      yam.connect.embedFeed({
+        useNewYammer: true,
+        container: '#embed-1',
+      });
+    </script>
  </body>
 </html>
 
